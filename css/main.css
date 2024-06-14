@@ -1,0 +1,31 @@
+.blink_me::after {
+    animation: blinker 1s linear infinite;
+    font-size: 1em;
+    content: ' _';
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.mt1 {
+    margin-top: 1%;
+}
+
+.mt5 {
+    margin-top: 5%;
+}
+
+.mt10 {
+    margin-top: 10%;
+}
+
+.mt--2 {
+    margin-top: -2%;
+}
+
+.mt--1 {
+    margin-top: -1%;
+}
