@@ -27,12 +27,20 @@ div {
     margin-right: 1%;
 }
 
+.pl0 {
+    padding-left: 0;
+}
+
 .pl5 {
     padding-left: 5%;
 }
 
 .pl7 {
     padding-left: 7%;
+}
+
+.pb5 {
+    padding-bottom: 5%;
 }
 
 .font0_8em {
