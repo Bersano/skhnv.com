@@ -144,7 +144,7 @@ function button_clicked(element) {
     for (let i = 0; i < resetPoint.length; i++) {
         resetPoint[i].classList.add('text-secondary');
         resetPoint[i].classList.add('text-opacity-25');
-        resetPoint[i].querySelector(':scope > .skills').hidden = true;
+        resetPoint[i].children.namedItem('skills').hidden = true;
     }
 
     if (tech_stack[value] !== true) {
@@ -160,7 +160,7 @@ function button_clicked(element) {
         for (let i = 0; i < currentHashTag.length; i++) {
             currentHashTag[i].classList.remove('text-secondary');
             currentHashTag[i].classList.remove('text-opacity-25');
-            currentHashTag[i].querySelector(':scope > .skills').hidden = false;
+            currentHashTag[i].children.namedItem('skills').hidden = false;
         }
 
     } else {
@@ -173,13 +173,13 @@ function button_clicked(element) {
         for (let i = 0; i < resetPoint.length; i++) {
             resetPoint[i].classList.remove('text-secondary');
             resetPoint[i].classList.remove('text-opacity-25');
-            resetPoint[i].querySelector(':scope > .skills').hidden = true;
+            resetPoint[i].children.namedItem('skills').hidden = true;
         }
     }
 
-    if (Object.values(tech_stack).includes(true)) {
-        console.log(tech_stack_keys.filter(x => tech_stack[x] === true));
-    }
+    // if (Object.values(tech_stack).includes(true)) {
+    //     console.log(tech_stack_keys.filter(x => tech_stack[x] === true));
+    // }
 
 }
 
