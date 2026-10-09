@@ -182,3 +182,5 @@ function button_clicked(element) {
     }
 
 }
+
+document.getElementById('year').textContent = new Date().getFullYear();
