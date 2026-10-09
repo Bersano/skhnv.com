@@ -1,2 +1,20 @@
+# macOS
 .DS_Store
+.AppleDouble
+.LSOverride
+*.localized
+
+# JetBrains IDEs
 /.idea/
+*.iml
+
+# VS Code
+/.vscode/
+
+# Editors / temporary files
+*~
+.#*
+*.swp
+
+# Logs
+*.log
